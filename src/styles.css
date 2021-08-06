@@ -1,0 +1,218 @@
+body{
+  background-color:#161616;
+  font-family: 'Roboto',sans-serif;
+  padding:20px 10px;
+  color:#fff;
+  font-size:18px;
+}
+h3{
+  font-weight:normal;
+  font-size: 24px;
+}
+.search{
+  box-shadow: 0 0 0 0;
+  font-size:48px;
+  background-color: transparent;
+  width:100%;
+  border: 0 none;
+  border-bottom: 2px solid #585858;
+  font-weight:bold;
+  color:#fff;
+  margin:0 0 40px 0;
+}
+.search:focus{
+  outline: 0;
+} 
+#logo{
+  margin: 15px;
+}
+.col-left{
+  width:20%;
+  max-width:150px;
+  float:left;
+}
+.col-right{
+  float:left;
+  width:80%;
+  padding:30px 0 0 0;
+}
+.col-right .content{
+  margin:30px 0 0 0 0;
+}
+.disc{
+  float:left;
+  max-width:170px;
+  max-height:170px;
+  margin:20px 15px 100px 0;
+  padding: 0;
+}
+.disc img{
+  height:170px;
+  margin:0;
+  padding:0;
+}
+.box{
+  background-color:#d8d8d8;
+  width:170px;
+  height: 140px;
+  margin:0 0 16px 0;
+  float:left;
+}
+.album{
+  font-size:16px;
+  text-align:center
+}
+.artist{
+  font-size:16px;
+  text-align:center
+}
+.disc p{
+  margin:8px 0;
+  padding:0;
+  text-align:center
+}
+.disc p.artist{
+  color: #999;
+}
+.btn {
+  letter-spacing: 1px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .btn {
+  font-size: 1.2rem;
+}
+
+.main {
+  background-color:#161616!important;
+}
+
+.main-heading {
+  margin: 2rem 0;
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  border: 2px solid #566273;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 10%;
+  font-size: 150%;
+}
+
+.load-more {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  clear:both;
+  background-color:#333;
+  z-index:1000;
+  position:fixed;
+  bottom:0px;
+  left:20px;
+}
+
+.load-more button {
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  letter-spacing: 1px;
+  outline: none;
+  background-color:#333;
+}
+.load-more button:hover, 
+.load-more button:visited, {
+  background-color:#333!important;
+}
+
+#loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99999;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+}
+
+.message {
+  position: relative;
+  font-size: 150%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-10%);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.loader-open {
+  overflow: hidden;
+}
+
+.errorMsg {
+  color: #f21e08;
+  background: #fff0f0;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.search-buttons {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-buttons .btn {
+  margin: 0.8rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #778298;
+}
+
+.search-buttons .btn:focus {
+  box-shadow: none;
+}
+
+.albums,
+.artists,
+.playlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+  .search-buttons {
+    flex-direction: column;
+  }
+  .search-buttons .btn {
+    margin: 0.6rem;
+  }
+  .main-heading {
+    text-align: center;
+  }
+}
+::-webkit-input-placeholder, .search:-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {  
+  color:#999999;
+}
