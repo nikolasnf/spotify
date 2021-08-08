@@ -189,6 +189,19 @@ h3{
   font-weight: bold;
   color: #778298;
 }
+p.back, li.track {
+  text-align: left;
+  color: #999;
+}
+li.track a{
+  width:80%;
+  float:left;
+  color: #fff!important;
+  text-decoration: none;
+}
+p.back a {
+  color: #fff;
+}
 
 .search-buttons .btn:focus {
   box-shadow: none;

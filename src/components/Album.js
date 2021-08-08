@@ -13,7 +13,7 @@ const Album = (props) => {
     <React.Fragment className="content">
     <Left />
     <div className='col-right album'>
-      <p>
+      <p className='back'>
         <a href='/'>
           <b>&laquo;</b>Voltar
         </a>
@@ -25,7 +25,7 @@ const Album = (props) => {
       </div>
       <div className='col-right'>
         <ol>
-          <li>
+          <li className='track'>
             <a href='#'>Nome da Faixa</a>
             <abbr>3:33</abbr>
           </li>
