@@ -9,13 +9,12 @@ const AlbumsList = ({ albums }) => {
       {Object.keys(albums).length > 0 && (
         <div className="container">
           {albums.items.map((album, index) => {
-	    let href = "/album/"+album.id;
             return (
               <React.Fragment key={index}>
                 <Card className='disc'>
                   <a
                     target="_self"
-                    href={href}
+                    href={album.external_urls.spotify}
                     rel="noopener noreferrer"
                     className="box"
                   >
